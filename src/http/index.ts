@@ -1,14 +1,15 @@
-import type IRacao from "@/interface/IRacao"
-import type ListarRacao from "@/interface/ListarRacao";
-import type AtualizarRacao from "@/interface/AtualizarRacao";
+import type IRacao from "../interface/IRacao"
+import type ListarRacao from "../interface/ListarRacao"
+import type AtualizarRacao from "../interface/AtualizarRacao";
 import axios from "axios";
-import type Cadastrousuario from "@/interface/CadastroUsuario";
-import type LoginUser from "@/interface/LoginUser";
-import type AtualizarUser from "@/interface/AtualizarUser";
-import type AtualizacaoUsuario from "@/interface/AtualizacaoUsuario";
-import type EsqueceuSenha from "@/interface/EsqueceuSenha";
-import type ListarUsuario from "@/interface/ListarUsuario";
-import type ListarUsuarios from "@/interface/ListarUsuarios";
+import type Cadastrousuario from "../interface/CadastroUsuario";
+import type LoginUser from "../interface/LoginUser";
+import type AtualizarUser from "../interface/AtualizarUser";
+import type AtualizacaoUsuario from "../interface/AtualizacaoUsuario";
+import type EsqueceuSenha from "../interface/EsqueceuSenha";
+import type ListarUsuario from "../interface/ListarUsuarios";
+import ListarUsuarios from "../interface/ListarUsuarios";
+
 
 export async function cadastroRacao(salvarRacao: IRacao): Promise<string> {
     const body = JSON.stringify(salvarRacao);
